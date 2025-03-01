@@ -136,7 +136,7 @@ void Encoder_Init(void) {
   tim2.TIM_RepetitionCounter = 0;
   TIM_TimeBaseInit(TIM2, &tim2);
   TIM_EncoderInterfaceConfig(TIM2, TIM_EncoderMode_TI1, TIM_ICPolarity_Rising, TIM_ICPolarity_Rising);
-  TIM_SetCounter(TIM2,255); //initial=1000
+  TIM_SetCounter(TIM2,255); //initial=255
   TIM_Cmd(TIM2, ENABLE);
 }
 
